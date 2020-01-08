@@ -1,8 +1,8 @@
 body { font-size: 16px; line-height: 1.8; color: #6c757d; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
-::-moz-selection { background: #dc3545; }
+/* ::-moz-selection { background: #dc3545; }
 
-::selection { background: #dc3545; }
+::selection { background: #dc3545; } */
 
 h1, h2, h3, h4, h5 { color: #000; }
 
@@ -145,7 +145,7 @@ a:hover, a:active, a:focus { text-decoration: none; outline: none; }
 
 .project:hover .project-hover .project-hover-inner span, .project:hover .project-hover .post-hover-inner span, .project:hover .post-hover .project-hover-inner span, .project:hover .post-hover .post-hover-inner span, .project:focus .project-hover .project-hover-inner span, .project:focus .project-hover .post-hover-inner span, .project:focus .post-hover .project-hover-inner span, .project:focus .post-hover .post-hover-inner span, .post:hover .project-hover .project-hover-inner span, .post:hover .project-hover .post-hover-inner span, .post:hover .post-hover .project-hover-inner span, .post:hover .post-hover .post-hover-inner span, .post:focus .project-hover .project-hover-inner span, .post:focus .project-hover .post-hover-inner span, .post:focus .post-hover .project-hover-inner span, .post:focus .post-hover .post-hover-inner span { bottom: 0; visibility: visible; opacity: 1; }
 
-.templateux-footer { padding: 7em 0; border-top: 1px solid #FAFAFA ; }
+.templateux-footer { padding: 1.5em 0; border-top: 1px solid #FAFAFA ; }
 
 .templateux-footer .container-fluid { max-width: 100%; }
 
@@ -316,7 +316,7 @@ textarea.form-control { height: inherit; }
 
   font-size: 16px !important;
     color: #131415 !important;
-    margin-right: 5%;
+    /* margin-right: 5%; */
 }
 
 .site-logo img{
@@ -326,3 +326,10 @@ textarea.form-control { height: inherit; }
 .blue a{
   color: #2294E3;
 }
+
+hr {
+  width: 10%;
+  border-top: 2px solid #d32535;
+  margin-left: auto;
+  margin-right: auto;
+  }
