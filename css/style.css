@@ -1,4 +1,32 @@
-body { font-size: 16px; line-height: 1.8; color: #6c757d; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+@font-face {
+  font-family: Avnir-book;
+  src: url(../fonts/avnir/AvenirLTStd-Book.otf);
+}
+
+@font-face {
+  font-family: Avnir-medium;
+  src: url(../fonts/avnir/AvenirLTStd-Medium.otf);
+}
+
+@font-face {
+  font-family: Avnir-roman;
+  src: url(../fonts/avnir/AvenirLTStd-Roman.otf);
+}
+
+/* Georgia font */
+
+@font-face {
+  font-family: georgia-regular;
+  src: url(../fonts/georgia/Georgia\ Regular\ font.ttf);
+}
+
+@font-face {
+  font-family: georgia-bold;
+  src: url(../fonts/georgia/georgia\ bold.ttf);
+}
+
+
+body { font-size: 16px; line-height: 1.8; color: #131415; }
 
 /* ::-moz-selection { background: #dc3545; }
 
@@ -30,7 +58,7 @@ a:hover, a:active, a:focus { text-decoration: none; outline: none; }
 
 .templateux-navbar .templateux-menu ul li { display: inline-block; }
 
-.templateux-navbar .templateux-menu ul li a { margin-right: 20px; font-size: 13px; text-transform: uppercase; letter-spacing: .2em; color: #000; position: relative; padding-bottom: 5px; display: block; }
+.templateux-navbar .templateux-menu ul li a { margin-right: 20px; font-size: 12px; font-family: "Avnir-book"; text-transform: uppercase; letter-spacing: .2em; color: #000; position: relative; padding-bottom: 5px; display: block; }
 
 .templateux-navbar .templateux-menu ul li a:before { content: ""; position: absolute; bottom: 0; height: 2px; width: 0; left: 0; background: #dc3545; -webkit-transition: .15s width ease; -o-transition: .15s width ease; transition: .15s width ease; }
 
@@ -83,7 +111,9 @@ a:hover, a:active, a:focus { text-decoration: none; outline: none; }
 
 .templateux-hero, .intro { height: 80vh; min-height: 400px; }
 
-.templateux-hero h1, .intro h1 { color: #000; font-size: 70px; }
+.templateux-hero h1, .intro h1 { color: #000; font-size: 58px; line-height: 45px; font-family: "georgia-regular";}
+
+.templateux-hero h6, .intro h6 { color: #000; font-size: 15px; letter-spacing: 1.8px; font-family: "Avnir-book";}
 
 @media (max-width: 991.98px) { .templateux-hero h1, .intro h1 { font-size: 36px; } }
 
@@ -145,19 +175,21 @@ a:hover, a:active, a:focus { text-decoration: none; outline: none; }
 
 .project:hover .project-hover .project-hover-inner span, .project:hover .project-hover .post-hover-inner span, .project:hover .post-hover .project-hover-inner span, .project:hover .post-hover .post-hover-inner span, .project:focus .project-hover .project-hover-inner span, .project:focus .project-hover .post-hover-inner span, .project:focus .post-hover .project-hover-inner span, .project:focus .post-hover .post-hover-inner span, .post:hover .project-hover .project-hover-inner span, .post:hover .project-hover .post-hover-inner span, .post:hover .post-hover .project-hover-inner span, .post:hover .post-hover .post-hover-inner span, .post:focus .project-hover .project-hover-inner span, .post:focus .project-hover .post-hover-inner span, .post:focus .post-hover .project-hover-inner span, .post:focus .post-hover .post-hover-inner span { bottom: 0; visibility: visible; opacity: 1; }
 
-.templateux-footer { padding: 1.5em 0; border-top: 1px solid #FAFAFA ; }
+.templateux-footer { padding: 1.5em 0; background: #FAFAFA; }
 
 .templateux-footer .container-fluid { max-width: 100%; }
 
-.templateux-footer small { font-size: 16px; }
+.templateux-footer small { font-size: 12px; font-family: "Avnir-book"; }
 
 .templateux-footer p:last-child { margin-bottom: 0; }
 
 .templateux-footer .footer-social { position: relative; }
 
-.templateux-footer .footer-social a { color: #b3b3b3; position: relative; -webkit-transition: .3s all ease; -o-transition: .3s all ease; transition: .3s all ease; font-size: 26px; }
+.footer-social h6{ font-size: 18px; font-family: "Avnir-book"; }
 
-.templateux-footer .footer-social a:hover, .templateux-footer .footer-social a:focus { color: #dc3545; -webkit-transform: scale(1.7); -ms-transform: scale(1.7); transform: scale(1.7); }
+.templateux-footer .footer-social a { color: #b3b3b3; position: relative; -webkit-transition: .3s all ease; -o-transition: .3s all ease; transition: .3s all ease; font-size: 26px; font-family: "Avnir-book"; }
+
+.templateux-footer .footer-social a:hover, .templateux-footer .footer-social a:focus { color: #dc3545; -webkit-transform: scale(1.7); -ms-transform: scale(1.7); transform: scale(1.7); font-family: "Avnir-book"; }
 
 .btn:hover, .btn:focus, .btn:active { outline: none; -webkit-box-shadow: none !important; box-shadow: none !important; }
 
@@ -307,10 +339,6 @@ textarea.form-control { height: inherit; }
 
 /* New CSS */
 
-.line-title{
-  /* text-decoration: underline; */
-  font-size: 18px;
-}
 
 .mail {
 
@@ -328,8 +356,138 @@ textarea.form-control { height: inherit; }
 }
 
 hr {
-  width: 10%;
+  width: 17%;
   border-top: 2px solid #d32535;
   margin-left: auto;
   margin-right: auto;
   }
+
+.about-me h2{
+  font-size: 28px;
+  font-family: "georgia-regular";
+}
+
+.about-me p{
+  font-size: 15px;
+  font-family: "Avnir-book";
+}
+
+
+/* Project Detail */
+
+
+/* Question paper */
+
+.question-paper h1{
+    color: #007FBE;
+    font-size: 58px;
+    line-height: 45px;
+    font-family: "georgia-bold";
+}
+
+.question-paper p{
+  font-size: 15px;
+  font-family: "Avnir-book";
+}
+
+.question-paper-title{
+  /* text-decoration: underline; */
+  font-size: 18px;
+  color: #007FBE;
+  font-family: "georgia-bold";
+  position:relative;
+    display:inline-block;
+    padding-bottom:25px;
+}
+
+.question-paper-title:after{
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0%;
+  display: inline-block;
+  width: 100%;
+  border-bottom: Solid #B4B4B4 1px;
+}
+
+.question-screen span{
+  font-size: 14px;
+  font-family: "Avnir-book";
+}
+
+/* Swiggy redesign */
+
+.swiggy h1{
+  color: #FC8019;
+  font-size: 58px;
+  line-height: 45px;
+  font-family: "georgia-bold";
+}
+
+.swiggy p{
+  font-size: 15px;
+  font-family: "Avnir-book";
+}
+
+.swiggy h6{
+  font-size: 15px;
+  font-family: "Avnir-book";
+}
+
+.swiggy-heading h4{
+  font-size: 26px;
+  color: #FC8019;
+  font-family: "georgia-bold";
+  position:relative;
+    display:inline-block;
+    padding-bottom:25px;
+}
+
+
+/* Realty property holder */
+
+.realty-property h1{
+  color: #434343;
+  font-size: 58px;
+  line-height: 45px;
+  font-family: "georgia-bold";
+}
+
+.realty-property p{
+  font-size: 15px;
+  font-family: "Avnir-book";
+}
+
+.realty-property h6{
+  font-size: 15px;
+  font-family: "Avnir-book";
+}
+
+.realty-property h4{
+  font-size: 26px;
+  color: #6CB6D6;
+  font-family: "georgia-bold";
+  position:relative;
+    display:inline-block;
+    padding-bottom:25px;
+}
+
+.question-paper-title{
+  /* text-decoration: underline; */
+  font-size: 18px;
+  color: #007FBE;
+  font-family: "georgia-bold";
+  position:relative;
+    display:inline-block;
+    padding-bottom:25px;
+}
+
+.realty-property h4:after{
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0%;
+  display: inline-block;
+  width: 100%;
+  border-bottom: Solid #B4B4B4 1px;
+}
