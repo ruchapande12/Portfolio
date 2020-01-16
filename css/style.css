@@ -163,9 +163,9 @@ a:hover, a:active, a:focus { text-decoration: none; outline: none; }
 
 .project .project-hover .project-hover-inner, .project .project-hover .post-hover-inner, .project .post-hover .project-hover-inner, .project .post-hover .post-hover-inner, .post .project-hover .project-hover-inner, .post .project-hover .post-hover-inner, .post .post-hover .project-hover-inner, .post .post-hover .post-hover-inner { position: absolute; z-index: 99; left: 50%; top: 50%; visibility: hidden; opacity: 0; -webkit-transition: .3s all ease; -o-transition: .3s all ease; transition: .3s all ease; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); transition: .3s all ease; text-align: center; }
 
-.project .project-hover .project-hover-inner h2, .project .project-hover .post-hover-inner h2, .project .post-hover .project-hover-inner h2, .project .post-hover .post-hover-inner h2, .post .project-hover .project-hover-inner h2, .post .project-hover .post-hover-inner h2, .post .post-hover .project-hover-inner h2, .post .post-hover .post-hover-inner h2 { color: #fff; font-size: 26px; line-height: 1.2; -webkit-transition: .3s all ease; -o-transition: .3s all ease; transition: .3s all ease; opacity: 0; visibility: hidden; position: relative; bottom: -30px; }
+.project .project-hover .project-hover-inner h2, .project .project-hover .post-hover-inner h2, .project .post-hover .project-hover-inner h2, .project .post-hover .post-hover-inner h2, .post .project-hover .project-hover-inner h2, .post .project-hover .post-hover-inner h2, .post .post-hover .project-hover-inner h2, .post .post-hover .post-hover-inner h2 { color: #fff; font-size: 24px; font-family: "georgia-bold"; line-height: 1.2; -webkit-transition: .3s all ease; -o-transition: .3s all ease; transition: .3s all ease; opacity: 0; visibility: hidden; position: relative; bottom: -30px; }
 
-.project .project-hover .project-hover-inner span, .project .project-hover .post-hover-inner span, .project .post-hover .project-hover-inner span, .project .post-hover .post-hover-inner span, .post .project-hover .project-hover-inner span, .post .project-hover .post-hover-inner span, .post .post-hover .project-hover-inner span, .post .post-hover .post-hover-inner span { color: rgba(255, 255, 255, 0.8); opacity: 0; visibility: hidden; position: relative; bottom: -30px; -webkit-transition: .5s all ease; -o-transition: .5s all ease; transition: .5s all ease; }
+.project .project-hover .project-hover-inner span, .project .project-hover .post-hover-inner span, .project .post-hover .project-hover-inner span, .project .post-hover .post-hover-inner span, .post .project-hover .project-hover-inner span, .post .project-hover .post-hover-inner span, .post .post-hover .project-hover-inner span, .post .post-hover .post-hover-inner span { color: rgba(255, 255, 255, 0.8); font-family: "Avnir-book"; opacity: 0; visibility: hidden; position: relative; bottom: -30px; -webkit-transition: .5s all ease; -o-transition: .5s all ease; transition: .5s all ease; }
 
 .project:hover .project-hover, .project:hover .post-hover, .project:focus .project-hover, .project:focus .post-hover, .post:hover .project-hover, .post:hover .post-hover, .post:focus .project-hover, .post:focus .post-hover { visibility: visible; opacity: 1; }
 
@@ -400,7 +400,7 @@ hr {
     padding-bottom:25px;
 }
 
-.question-paper-title:after{
+/* .question-paper-title:after{
   content: "";
   position: absolute;
   bottom: 8px;
@@ -408,7 +408,7 @@ hr {
   display: inline-block;
   width: 100%;
   border-bottom: Solid #B4B4B4 1px;
-}
+} */
 
 .question-screen span{
   font-size: 14px;
@@ -461,6 +461,12 @@ hr {
 .realty-property h6{
   font-size: 15px;
   font-family: "Avnir-book";
+  line-height: 30px;
+}
+
+.realty-subheading p{
+  font-size: 15px;
+  font-family: "Avnir-book";
 }
 
 .realty-property h4{
@@ -482,7 +488,13 @@ hr {
     padding-bottom:25px;
 }
 
-.realty-property h4:after{
+.realty-thanks{
+  font-size: 34px !important;
+  color: #6CB6D6 !important;
+  font-family: "georgia-bold" !important;
+}
+
+/* .realty-property h4:after{
   content: "";
   position: absolute;
   bottom: 8px;
@@ -490,4 +502,53 @@ hr {
   display: inline-block;
   width: 100%;
   border-bottom: Solid #B4B4B4 1px;
+} */
+
+
+/* amealio */
+
+.amealio h1{
+  color: #434343;
+  font-size: 58px;
+  line-height: 70px;
+  font-family: "georgia-bold";
+}
+
+.amealio h4{
+  font-size: 26px;
+  color: #434343;
+  font-family: "georgia-regular";
+  position:relative;
+    display:inline-block;
+    padding-bottom:25px;
+}
+
+
+/* elevare */
+
+.elevare h1{
+  color: #434343;
+  font-size: 58px;
+  line-height: 70px;
+  font-family: "georgia-bold";
+}
+
+.elevare h4{
+  font-size: 26px;
+  color: #434343;
+  font-family: "georgia-regular";
+  position:relative;
+    display:inline-block;
+    padding-bottom:25px;
+}
+
+/* vet-tab */
+
+.vet-tab h4{
+  font-size: 26px;
+  color: #434343;
+  font-family: "georgia-regular";
+  position:relative;
+    display:inline-block;
+    padding-bottom:25px;
 }

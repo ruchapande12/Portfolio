@@ -1,7 +1,31 @@
 /* =header font size */
-body{
-
+@font-face {
+  font-family: Avnir-book;
+  src: url(../fonts/avnir/AvenirLTStd-Book.otf);
 }
+
+@font-face {
+  font-family: Avnir-medium;
+  src: url(../fonts/avnir/AvenirLTStd-Medium.otf);
+}
+
+@font-face {
+  font-family: Avnir-roman;
+  src: url(../fonts/avnir/AvenirLTStd-Roman.otf);
+}
+
+/* Georgia font */
+
+@font-face {
+  font-family: georgia-regular;
+  src: url(../fonts/georgia/Georgia\ Regular\ font.ttf);
+}
+
+@font-face {
+  font-family: georgia-bold;
+  src: url(../fonts/georgia/georgia\ bold.ttf);
+}
+
 
 h1, h2, h3, h4, h5, h6 {color: #111;}
 h1 {border-bottom: 0.07142855em double #444; color: #000; font: normal 3.5em/2 "Georgia", sans-serif; text-align: center;}
@@ -24,11 +48,6 @@ header h2, header p {padding: 0 40px; width: 510px;}
 /* page holder */
 .page {background: #fff; border: 0.07142855em solid #CECECE; margin: 0.35714286em auto 1em; padding-bottom: 1.5em; position: relative; width: 960px;}
 
-
-
-
-
-
 /*h3 {display: inline-block; margin-top: 0; padding-top: 0;}*/
 .time {font-size: 0.75em; font-weight: normal; float: right; margin-top: 0; padding-top: 0; position: absolute; right: 0;} /* 16 / 20 */
 
@@ -38,14 +57,13 @@ ul li {list-style-type: square; position: relative;}
 .technology li { }
 .technology li > span {display: none;}
 
-
 /* =a styles */
 a:link, a:active, a:focus, a:visited, a:hover {color: #444; text-decoration: none;}
 
 @media screen and (min-width: 320px) {
     html, body {margin: 0; padding: 0; text-shadow: none;}
 	
-    header, header h2, header p, .page, footer {background: #fff; margin: 0 auto; padding: 0; width: 93.75%;}
+    header, header h2, header p, .page {background: #fff; margin: 0 auto; padding: 0; width: 93.75%;}
     header {margin-bottom: 1em;}
     header h2, header p {margin-left: 0; padding-left: 0;}
     .page .resume_content, .page .resume_skills {float: none; margin: 0; padding: 0; width: 100%;} 
@@ -62,7 +80,7 @@ a:link, a:active, a:focus, a:visited, a:hover {color: #444; text-decoration: non
 
 @media screen and (min-width: 767px) {
     html, body, .page {border: none !important; color: #444 !important; text-shadow: none !important; filter:none !important; margin: 0; padding: 0; -ms-filter: none !important;}
-    body {background-color: #FFFFFF !important;}
+    body {background-color: #FFFFFF !important; font-family: "Avnir-book";}
   
     /* page holder */
     .page {background: #fff; margin: 0.35714286em auto 1em; position: relative; width: 93.75%;} /* 960px / 1024px */
@@ -100,7 +118,7 @@ b {font-weight: normal; margin-top: -2px; padding-top: 0; position: absolute; ri
     @page { margin: 0.5cm; }
   
     body {
-        font: 12pt Georgia, "Times New Roman", Times, serif;
+      font-family: "Avnir-book";
         line-height: 1.3;
     }
 
@@ -137,6 +155,7 @@ h1.main-content {
     padding-top: 15%;
     text-align: left;
     font-size: 38px;
+    font-family: "georgia-bold";
     /* text-shadow: 2px 3px 2px #999; */
 }
 
@@ -145,6 +164,7 @@ h1.main-content {
     padding-top: 42%;
     text-align: left;
     font-size: 38px;
+    font-family: "georgia-bold";
     /* text-shadow: 2px 3px 2px #999; */
   }
 }
