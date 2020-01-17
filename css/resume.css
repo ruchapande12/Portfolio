@@ -54,7 +54,7 @@ header h2, header p {padding: 0 40px; width: 510px;}
 /* =ul style */
 ul {
   /* margin: 0 2em 0.857em; */
-  margin-left: -18px;
+  margin-left: -20px;
 }
 ul li {list-style-type: square; position: relative;}
 .technology li { }
@@ -163,11 +163,22 @@ h1.main-content {
 }
 
 @media only screen and (max-width: 600px) {
+
+  body{
+    font-family: "Avnir-book" !important;
+  }
+
   h1.main-content {
-    padding-top: 42%;
+    padding-top: 50%;
     text-align: left;
-    font-size: 38px;
+    font-size: 34px;
     font-family: "georgia-bold";
     /* text-shadow: 2px 3px 2px #999; */
   }
+  header h2, header p {
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 18px;
+}
+
 }
