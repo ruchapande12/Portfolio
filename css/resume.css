@@ -28,8 +28,8 @@
 
 
 h1, h2, h3, h4, h5, h6 {color: #111;}
-h1 {border-bottom: 0.07142855em double #444; color: #000; font: normal 3.5em/2 "Georgia", sans-serif; text-align: center;}
-h2 {color: #000; font-size: 1.5em; letter-spacing: 0.07142855em; font-variant: small-caps;} /* 24px / 16px */
+h1 {border-bottom: 0.07142855em double #444; color: #000; text-align: center;}
+h2 {color: #000; font-size: 1.5em; letter-spacing: 0.07142855em;} /* 24px / 16px */
 h3 {border-bottom: 0.07142855em solid #333; font-size: 1.25em; line-height: 1.42857em; margin-bottom: 0.375em; margin-top: 1.05357em; position: relative;}  20px / 16px
 h4 {font-size: 1.1255em; line-height: 1.2857em; margin-bottom: 0.375em; margin-top: 1.0893em;}  /* 18px / 16px */
 
@@ -46,13 +46,16 @@ header h2, header p {padding: 0 40px; width: 510px;}
 /* header h1 {text-shadow: 2px 3px 2px #999;} */
 
 /* page holder */
-.page {background: #fff; border: 0.07142855em solid #CECECE; margin: 0.35714286em auto 1em; padding-bottom: 1.5em; position: relative; width: 960px;}
+.page {background: #fff; margin: 0.35714286em auto 1em; padding-bottom: 1.5em; position: relative; width: 960px;}
 
 /*h3 {display: inline-block; margin-top: 0; padding-top: 0;}*/
 .time {font-size: 0.75em; font-weight: normal; float: right; margin-top: 0; padding-top: 0; position: absolute; right: 0;} /* 16 / 20 */
 
 /* =ul style */
-ul {margin: 0 2em 0.857em;}
+ul {
+  /* margin: 0 2em 0.857em; */
+  margin-left: -18px;
+}
 ul li {list-style-type: square; position: relative;}
 .technology li { }
 .technology li > span {display: none;}
@@ -80,7 +83,7 @@ a:link, a:active, a:focus, a:visited, a:hover {color: #444; text-decoration: non
 
 @media screen and (min-width: 767px) {
     html, body, .page {border: none !important; color: #444 !important; text-shadow: none !important; filter:none !important; margin: 0; padding: 0; -ms-filter: none !important;}
-    body {background-color: #FFFFFF !important; font-family: "Avnir-book";}
+    body {background-color: #FFFFFF !important; font-family: "Avnir-book" !important;}
   
     /* page holder */
     .page {background: #fff; margin: 0.35714286em auto 1em; position: relative; width: 93.75%;} /* 960px / 1024px */

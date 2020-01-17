@@ -125,7 +125,7 @@ a:hover, a:active, a:focus { text-decoration: none; outline: none; }
 
 @media (max-width: 767.98px) { .container-fluid { padding-left: 15px; padding-right: 15px; } }
 
-.templateux-section { padding: 2em 0; }
+.templateux-section { padding: 4em 0; }
 
 @media (max-width: 991.98px) { .templateux-section { padding: 3em 0; } }
 
@@ -363,7 +363,7 @@ hr {
   }
 
 .about-me h2{
-  font-size: 28px;
+  font-size: 32px;
   font-family: "georgia-regular";
 }
 
