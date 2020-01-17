@@ -167,7 +167,10 @@ h1.main-content {
   body{
     font-family: "Avnir-book" !important;
   }
-
+  p{
+    font-family: "Avnir-book" !important;
+  }
+	
   h1.main-content {
     padding-top: 50%;
     text-align: left;
